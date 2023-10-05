@@ -9,6 +9,7 @@
     --clr-brand: #432A19;
     --clr-primary: #8A7243;
     --clr-secondary: #36578A;
+    --clr-brand-transparent: rgba(44, 28, 16, 0.96);
 }
 
 * {
@@ -62,7 +63,7 @@ p {
 }
 
 a {
-    color: var(--color-light);
+    color: var(--clr-light);
     padding: 0;
     margin: 0;
 }
@@ -274,6 +275,89 @@ footer {
     width: 500px;
 }
 
+.navbar-collapse .btn-close {
+  position: relative;
+  top: 0;
+  margin: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: darkred;
+}
+
+.navbar .navbar-collapse.collapse .btn-close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex !important;
+  visibility: visible !important; 
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-collapse.collapse {
+  width: 284px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 0 !important;
+  display: flex !important;
+  visibility: visible !important; 
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(190, 190, 190, 0.96);
+  box-shadow: 0 0 6px #222;
+}
+
+.navbar-collapse.collapse .navbar-nav {
+  margin-top: 68px;
+  width: 100%;
+  padding: 2px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-collapse.collapse .navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .navbar-collapse.collapse .navbar-nav .nav-item {
+  width: 100%;
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+.navbar .navbar-collapse.collapse .nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2px 0;
+  padding: 12px 0;
+  text-align: center;
+  color: var(--clr-dark) !important;
+}
+
+.navbar .navbar-collapse.collapse .nav-link:hover,
+.navbar .navbar-collapse.collapse .active
+ {
+  background: var(--clr-brand);
+  color: var(--clr-light) !important;
+}
+
 /* Tela Muito pequena */
 @media (max-width: 414px) {
     .brand-image {
@@ -299,9 +383,9 @@ footer {
     }
 
     .navbar .navbar-collapse {
-        display: none;
-        visibility: hidden;
-    }
+      display: none;
+      visibility: hidden;
+  }
 
     .navbar .btn-menu {
         display: block;
@@ -853,7 +937,7 @@ footer {
     font-size: 1.6em;
     padding: 2px 20px;
     margin: 80px 0;
-    color: var(--color-light);
+    color: var(--clr-light);
 }
 
 .card a { color: white; }
@@ -1966,6 +2050,54 @@ footer {
   .offset-xl-11 {
     margin-left: 91.666667%;
   }
+}
+
+/* ######################################### Fixed Elements ######################################### */
+
+.fixed-top {
+  margin: 0px;
+  padding: 0px;
+  color: var(--clr-light);
+  background: var(--clr-brand-transparent); /* rgba(250, 250, 250, 1.2); */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-top .navbar {
+  box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.2);
+}
+
+.fixed-top .navbar .brand-image {
+  width: 300px;
+}
+
+.fixed-top .navbar .navbar-nav .nav-item .nav-link:hover,
+.fixed-top .navbar .navbar-nav .nav-item .active {
+  color: var(--clr-light) !important;
+  border-bottom: 2px solid var(--clr-light);
+}
+
+.fixed-top .btn-menu {
+  margin: 10px 10px;
+  padding: 0;
+  border: 1px, solid, var(--clr-primary) !important;
+  background: rgba(25, 25, 25, 0.08);
+  color: var(--clr-primary);
+}
+
+.fixed-top .btn-menu:hover {
+  background: rgba(25, 25, 25, 0.2);
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 /* ######################################### Bootstrap v1.0  ######################################### */
