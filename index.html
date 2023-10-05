@@ -5,121 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>N. Amancio Construções [Preview]</title>
 </head>
 <body>
 
-    <main>
+    <main class="container-fluid">
 
         <!-- #region header -->
-        <header class="container-fluid navbar bg-transparent">
- 
-            <a href="#">
-                <img src="./img/logo-2.png" alt="logo" class="image-brand">
-            </a>
+        <header class="container-fluid">
+            <nav class="navbar">
+                <a href="#" class=".navbar-brand">
+                    <img class="brand-image" src="./img/logo-2.png" alt="">
+                </a>
 
-            <nav class="navbar-nav">
-                <ul class="navlist">
-                    <li class="nav-item">
-                        <a class="nav-link text-light active" href="#inicio">Inicio</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#serviços">Serviços</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#sobre">Sobre</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#contato">Contato</a></li>
-                </ul>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#serviços">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <button id="btn-menu" class="btn-menu">
+                    <i class="ri-menu-fill"></i>
+                </button>
+
             </nav>
-
         </header>
         <!-- #endregion -->
 
-        <!-- #region CAPA -->
-        <section class="bg-image min-vh-100" id="inicio">
+        <!-- #region section (CAPA) -->
+        <section class="inicio">
+            <div class="min-vh-100 bg-image">
 
-            <div class="container vh-50 d-flex justify-content-center align-items-center">
-                <h2 class="text-center text-light display-4">CAPA</h2>
-            </div>
-
-            <!-- #region footer -->
-            <footer class="container-fluid bg-gross border-top">
-                <div>              
-                    <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
-                </div>
-            </footer>
-            <!-- #endregion -->
-        </section>
-        <!-- #endregion -->
-
-        <!-- #region Serviços -->
-        <section class="bg-light d-block" id="serviços">
-
-            <h2 style="padding-top: 100px;" class="text-center display-3">Serviços</h2>
-
-            <div class="vh-75 d-flex justify-content-center align-items-center">
-
-                <div class="container text-dark vh-50">
-
-                    <div class="row vh-50 justify-content-center">
-    
-                        <div class="col-lg-3 border text-light mx-5">
+                <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+                    <div class="bg-gross-dark card min-vh-42 d-flex flex-column justify-content-center">
+        
+                            <h2 class="text-light display-4">
+                                Deseja Construir ou Reformar?
+                            </h2>
                             
-                        </div>
-    
-                        <div class="col-lg-3 border text-light mx-5">
-                            
-                        </div>
-    
-                        <div class="col-lg-3 border text-light mx-5">
-                            
-                        </div>
-    
+                            <p class="text-light lead">
+                                Se você precisa de um serviço de construção ou reforma, você veio ao lugar certo! Oferecemos serviços personalizados e de alta qualidade para atender às suas necessidades. Nossa equipe altamente qualificada trabalha com você para garantir que o projeto seja concluído com perfeição, dentro do prazo e orçamento estabelecidos.</p>
+
                     </div>
-    
                 </div>
+
             </div>
 
+            <footer class="container-fluid bg-gross border-top">
+                <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
+            </footer>
         </section>
         <!-- #endregion -->
 
-        <!-- #region Sobre -->
-        <section class="bg-light min-vh-100" id="sobre">
-                <div class="container text-dark">
+        <!-- #region Section (Serviços) -->
+        <section id="serviços">
+            <div class="min-vh-100 d-flex flex-column bg-light">
 
-                    <div class="row vh-75 justify-content-center">
-    
-                        <div class="col-lg-6 bg-dark border text-light">
-                        </div>
-    
-                        <div class="col-lg-6 text-dark px-5">
-                            <div class="row px-5 justify-content-center">
-                                <div class="col-7">
-                                    <h2 class="display-3">Sobre</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nulla sit consequatur libero autem esse vitae numquam voluptate non dignissimos minima facere enim, cum repudiandae quas quibusdam nam nobis beatae vel placeat quia? Quae accusamus, laborum architecto vel nam soluta quo dolore consequatur fugiat, minus, inventore blanditiis rerum! Eveniet a vero ipsam corporis nostrum iusto incidunt sed odio labore rerum? Adipisci, accusantium quibusdam? Fugit aspernatur repellat possimus unde adipisci saepe atque, voluptatibus, a dignissimos earum laborum corporis laboriosam maiores veniam sint, ut quibusdam pariatur voluptas inventore in ab! Doloremque vitae, laborum culpa illo suscipit ullam. Molestiae quas fugiat culpa aspernatur?</p>
+                <h2 style="padding-top: 100px; padding-bottom: 32px;" class="text-center display-3">Serviços</h2>
+
+                <div class="position-relative m-5">
+                    <div class="mt-5 container">
+
+                        <div class="min-vh-100">
+                            <div class="row justify-content-between">
+
+                                <div class="col-lg-3 border bg-light mx-4">
+                                  <div class="d-flex flex-column align-items-center">    
+                                        <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
+                                        <h2 class="display-4 align-self-start">Title</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
+                                            laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
+                                            nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
+                                            earum minus modi quam!</p>
+                                    </div>
                                 </div>
+    
+                                <div class="col-lg-3 border bg-light mx-4">
+                                    <div class="d-flex flex-column align-items-center">    
+                                          <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
+                                          <h2 class="display-4 align-self-start">Title</h2>
+                                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
+                                              laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
+                                              nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
+                                              earum minus modi quam!</p>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-3 border bg-light mx-4">
+                                    <div class="d-flex flex-column align-items-center">    
+                                          <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
+                                          <h2 class="display-4 align-self-start">Title</h2>
+                                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
+                                              laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
+                                              nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
+                                              earum minus modi quam!</p>
+                                      </div>
+                                  </div>
+
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Section (Sobre) -->
+        <section id="sobre">
+            <div class="min-vh-100 d-flex justify-content-center align-items-center">
+                
+                <div class="container text-dark">
+
+                    <div class="row justify-content-center">
+    
+                        <div class="col-lg-6 text-dark px-5">            
+                            <h2 class="display-3 pb-5 mb-5">Sobre</h2>
+                            <p class="lead pt-5 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nulla sit consequatur libero autem esse vitae numquam voluptate non dignissimos minima facere enim, cum repudiandae quas quibusdam nam nobis beatae vel placeat quia? Quae accusamus, laborum architecto vel nam soluta quo dolore consequatur fugiat, minus, inventore blanditiis rerum! Eveniet a vero ipsam corporis nostrum iusto incidunt sed odio labore rerum? Adipisci, accusantium quibusdam? Fugit aspernatur repellat possimus unde adipisci saepe atque, voluptatibus, a dignissimos earum laborum corporis laboriosam maiores veniam sint, ut quibusdam pariatur voluptas inventore in ab! Doloremque vitae, laborum culpa illo suscipit ullam. Molestiae quas fugiat culpa aspernatur?</p>    
+                            <img src="./img/logo.png" alt="logo" style="width: 200px; margin-top: 64x;">
+                        </div>
     
                     </div>
     
                 </div>
+
+            </div>
         </section>
         <!-- #endregion -->
 
-        <!-- #region Contato -->
-        <section class="bg-dark-gradient min-vh-100" id="contato">
+        <!-- #region Section (Contato) -->
+        <section class="bg-image-contato" id="contato">           
+            <div class="min-vh-100 bg-dark-transparent d-flex justify-content-center align-items-center">
+                
+                <p class="text-light">CONTATO</p>
 
-            <div class="container">
-                <p class="text-center text-light">CONTATO</p>
             </div>
 
-            <!-- #region footer -->
             <footer class="container-fluid bg-gross border-top">
-                <div>              
-                    <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
-                </div>
+                <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
             </footer>
+
         </section>
         <!-- #endregion -->
 
