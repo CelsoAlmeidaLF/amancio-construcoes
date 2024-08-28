@@ -259,6 +259,13 @@ li:hover a,
         color: var(--clr-light);
     }
 
+    .navbar .nav-item .nav-link:hover,
+    .navbar .nav-item .active
+    {
+        color: var(--clr-brand);
+        border-bottom: 4px solid var(--clr-brand);
+    }
+
 @media (max-width: 800px) {
 
   .navbar-collapse {
