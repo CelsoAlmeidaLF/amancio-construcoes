@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/site.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>N. Amancio Construções [Preview]</title>
 </head>
@@ -12,158 +12,340 @@
 
     <main class="container-fluid">
 
-        <!-- #region header -->
+        <!-- #region HEADER -->
         <header class="container-fluid">
-            <nav class="navbar">
-                
-                <a href="#" class=".navbar-brand">
+            <div class="navbar border-bottom bg-gross-3 box-shadow-bottom"> 
+
+                <a href="#" class="navbar-brand">
                     <img class="brand-image" src="./img/logo-2.png" alt="">
                 </a>
 
                 <div class="navbar-collapse">
-
+                
                     <div> 
                         <button id="btn-close" class="btn-close">
                             <i class="ri-close-fill"></i>
                         </button>
                     </div>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#serviços">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
+                    <nav class="navlist">
+                        <ul>
+                            <li><a class="nav-link" href="#inicio" class="active">INICIO</a></li>
+                            <li><a class="nav-link" href="#fotos">GALERIA DE FOTOS</a></li>
+                            <li><a class="nav-link" href="#contato">CONTATO</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
 
-                <button id="btn-menu" class="btn-menu">
-                    <i class="ri-menu-fill"></i>
+                <button id="btn-menu" class="navbar-toggler">
+                    <i class="ri-menu-line"></i>
                 </button>
 
-            </nav>
+            </div>
         </header>
         <!-- #endregion -->
 
-        <!-- #region section (CAPA) -->
-        <section id="inicio">
-            <div class="min-vh-100 bg-image">
+        <!-- #region CAPA -->
+        <section id="inicio" class="bg-image min-vh-100">
+            <div class="container-fluid">
+                <div class="container min-vh-100 d-flex justify-content-center align-items-end">  
+                    <div class="card-display bg-gross-1 my-4">
+                        <div class="carousel text-light">                           
+                            <div class="carousel-inner">
 
-                <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-                    <div class="bg-gross-dark card min-vh-42 d-flex flex-column justify-content-center">
-        
-                            <h2 class="text-light display-4">
-                                Deseja Construir ou Reformar?
-                            </h2>
-                            
-                            <p class="text-light lead">
-                                Se você precisa de um serviço de construção ou reforma, você veio ao lugar certo! Oferecemos serviços personalizados e de alta qualidade para atender às suas necessidades. Nossa equipe altamente qualificada trabalha com você para garantir que o projeto seja concluído com perfeição, dentro do prazo e orçamento estabelecidos.</p>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <footer class="container-fluid bg-gross border-top">
-                <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
-            </footer>
-        </section>
-        <!-- #endregion -->
-
-        <!-- #region Section (Serviços) -->
-        <section id="serviços">
-            <div class="min-vh-100 d-flex flex-column bg-light">
-
-                <h2 style="padding-top: 100px; padding-bottom: 32px;" class="text-center display-3">Serviços</h2>
-
-                <div class="position-relative m-5">
-                    <div class="mt-5 container">
-
-                        <div class="min-vh-100">
-                            <div class="row justify-content-between">
-
-                                <div class="col-lg-3 border bg-light mx-4">
-                                  <div class="d-flex flex-column align-items-center">    
-                                        <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
-                                        <h2 class="display-4 align-self-start">Title</h2>
-                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
-                                            laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
-                                            nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
-                                            earum minus modi quam!</p>
-                                    </div>
+                                <div class="carousel-item active d-flex align-items-end">
+                                    <p class="display-4">Execução de galpão fundação aço, ferro e concreto.</p>
                                 </div>
-    
-                                <div class="col-lg-3 border bg-light mx-4">
-                                    <div class="d-flex flex-column align-items-center">    
-                                          <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
-                                          <h2 class="display-4 align-self-start">Title</h2>
-                                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
-                                              laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
-                                              nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
-                                              earum minus modi quam!</p>
-                                      </div>
-                                  </div>
 
-                                  <div class="col-lg-3 border bg-light mx-4">
-                                    <div class="d-flex flex-column align-items-center">    
-                                          <img src="./img/icons/icon-1.png" alt="image" style="width: 164px;" class="m-5 p-5">
-                                          <h2 class="display-4 align-self-start">Title</h2>
-                                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus, facilis iusto cumque consequatur 
-                                              laudantium repellat quo nemo? Cum maiores porro voluptatum minima, labore delectus incidunt. Quas ipsum et dolore 
-                                              nostrum consequuntur eveniet sequi ex, fuga nihil alias officiis nulla id reprehenderit ducimus ea voluptate accusamus 
-                                              earum minus modi quam!</p>
-                                      </div>
-                                  </div>
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Execução de Alvenaria.</p>
+                                </div>
+                        
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Execução embolso e colocação ceramica e azulejo.</p>
+                                </div>
+                        
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Execução de manta afasto 4 mm.</p>
+                                </div>
+                        
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Execução de afasto frio derretido.</p>
+                                </div>
+                        
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Execução de manta liquida.</p>
+                                </div>
+                                
+                                <div class="carousel-item d-flex align-items-end">
+                                    <p class="display-4">Demolição geral.</p>
+                                </div>
 
                             </div>
-                        </div>
 
+                            <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                            <button class="carousel-control next" onclick="nextSlide()">❯</button>
+
+                        </div>  
                     </div>
                 </div>
-
             </div>
         </section>
-        <!-- #endregion -->
+        <!-- #endregion CAPA -->
 
-        <!-- #region Section (Sobre) -->
-        <section id="sobre">
-            <div class="min-vh-100 d-flex justify-content-center align-items-center">
-                
-                <div class="container text-dark">
+        <!-- #region GALERIA DE FOTOS -->
+        <section id="fotos" class="bg-dark min-vh-100">
 
-                    <div class="row justify-content-center">
-    
-                        <div class="col-lg-6 text-dark px-5">            
-                            <h2 class="display-3 pb-5 mb-5">Sobre</h2>
-                            <p class="lead pt-5 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nulla sit consequatur libero autem esse vitae numquam voluptate non dignissimos minima facere enim, cum repudiandae quas quibusdam nam nobis beatae vel placeat quia? Quae accusamus, laborum architecto vel nam soluta quo dolore consequatur fugiat, minus, inventore blanditiis rerum! Eveniet a vero ipsam corporis nostrum iusto incidunt sed odio labore rerum? Adipisci, accusantium quibusdam? Fugit aspernatur repellat possimus unde adipisci saepe atque, voluptatibus, a dignissimos earum laborum corporis laboriosam maiores veniam sint, ut quibusdam pariatur voluptas inventore in ab! Doloremque vitae, laborum culpa illo suscipit ullam. Molestiae quas fugiat culpa aspernatur?</p>    
-                            <img src="./img/logo.png" alt="logo" style="width: 200px; margin-top: 64x;">
-                        </div>
-    
+            <div class="container-relative bg-dark min-vh-100">
+     
+                <div class="row py-5">
+                    <div class="col-12 text-align-center">
+                        <h2 class="text-light">GALERIA DE FOTOS</h2>
                     </div>
-    
+                </div>
+                
+                <div class="container-relative">
+                
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (1).jpg" alt="">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (2).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (3).jpg" alt="">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (4).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (5).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (6).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (7).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (8).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (9).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (10).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (13).jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (14).jpg" alt="">
+                
+                            </div>      
+                        </div>
+                
+                    </div>
+                
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (15).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (16).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (17).jpg" alt="">
+                
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (1).jpg" alt="">
+                
+                            </div>
+                        </div>
+                
+                    </div>
+                
                 </div>
 
+                <br>
+
             </div>
+
         </section>
-        <!-- #endregion -->
+        <!-- #endregion GALERIA DE FOTOS -->
 
-        <!-- #region Section (Contato) -->
-        <section class="bg-image-contato" id="contato">           
-            <div class="min-vh-100 bg-dark-transparent d-flex justify-content-center align-items-center">
-                
-                <p class="text-light">CONTATO</p>
-
+        <!-- #region CONTATOS -->
+        <section id="contato" class="bg-image-contato min-vh-100">  
+            <div class="container-relative min-vh-100 bg-dark-transparent"> 
+                <div class="container-fluid">    
+                    <div style="min-height: 70vh; min-width: 90vw;">
+    
+                        <!-- #region Title -->
+                        <div class="row my-4 text-align-center">
+                            <div class="col-12 text-light">
+                                <h2>ENTRE EM CONTATO</h2>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                        
+                        <div class="row mt-4">
+                        
+                            <!-- #region Informações de Contato -->
+                            <div class="col-md-6 py-2 px-4">
+                        
+                                <div class="d-flex justify-content-center" style="min-width: 300px;">
+                        
+                                    <div style="padding-top: 42px; margin: 10px 32px">
+                                        <div class="mx-4">
+                                            <p class="text-light">Endereço Cormecial</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">R. Estevão Dias Vergara, 184 comp. Sala 01</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">Bairro: Jd. Nossa Senhora do Carmo</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">Cep: 08275-120</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">São Paulo - SP</p>
+                                            <br>
+                                            <p class="text-light">Celular</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">(11) 98606 - 6391 (TIM)</p>
+                                            <p class="text-light" style="font-size: 0.8rem;">(11) 94052 - 2658 (CLARO)</p>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                        
+                        
+                            </div>
+                            <!-- #endregion -->
+                        
+                            <!-- #region Envio de Email  -->
+                            <div class="col-md-6 py-2 px-2">
+                                <div style="padding-top: 42px; margin: 10px 32px;  min-height: 100%;">
+                                    <div class="mx-4">
+                                        <div class="d-flex justify-content-center" style="min-width: 300px;">
+                        
+                                            <!-- #region FormEmail -->
+                                            <form action="" method="post">
+                        
+                                                <div class="">
+                                                    <label for=""></label>
+                                                    <input type="text" name="txtEmail" id="txtEmail" placeholder="E-MAIL">
+                                                </div>
+                                                
+                                                <div class="">
+                                                    <label for=""></label>
+                                                    <input type="text" name="txtNome" id="txtNome" placeholder="NOME">
+                                                </div>
+                        
+                                                <div class="">
+                                                    <label for=""></label>
+                                                    <input type="text" name="txtAssunto" id="txtAssunto" placeholder="ASSUNTO">
+                                                </div>
+                        
+                                                <div class="">
+                                                    <label for=""></label>
+                                                    <textarea type="text" name="txtMensagem" id="txtMensagem" placeholder="MENSAGEM"></textarea>
+                                                </div>
+                        
+                                                <div class="">
+                                                    <button type="submit">ENVIAR</button>
+                                                    <button type="submit">CANCELAR</button>
+                                                </div>
+                        
+                                            </form>
+                                            <!-- #endregion -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion -->
+                        </div>         
+                    </div>
+                </div>
             </div>
 
-            <footer class="container-fluid bg-gross border-top">
-                <p class="text-light">Systekna &copy; 2023 Todos direitos reservados.</p>
+            <!-- #region FOOTER -->
+            <footer class="container-fluid bg-gross border-top pt-4">
+                <p class="text-light">Systekna &copy; 2024 Todos direitos reservados.</p>
             </footer>
-
+            <!-- #endregion -->
+       
         </section>
+        <!-- #endregion CONTATOS -->
+    
+        <!-- #region VOLTAR -->
+        <a class="btn-voltar" href="#inicio">
+            <i class="ri-arrow-up-line text-light"></i>
+        </a>
         <!-- #endregion -->
 
     </main>
 
-    <script src="./js/script.js" async defer></script>
+    <script src="./js/site.js"></script>
 
 </body>
 </html>
