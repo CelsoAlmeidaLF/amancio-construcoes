@@ -1,9 +1,10 @@
 
 const btn_menu = document.querySelector("#btn-menu");
 const btn_close = document.querySelector("#btn-close");
+const bnt_voltar = document.querySelector('.btn-voltar');
 const section = document.querySelectorAll('section');
 const links = document.querySelectorAll('.nav-item .nav-link');
-const navbar = document.querySelector('header');
+const navbar = document.querySelector('header .navbar');
 
 let currentIndex = 0;
 
@@ -21,8 +22,13 @@ window.onscroll = () => {
         let offset = s.offsetTop - 150;
         let height = s.offsetHeight;
         let id = s.getAttribute('id');
-        let nav = navbar.clientHeight * 1.5;
-        
+        if(height > height-top){
+            navbar.classList.add('active');
+        }
+        else {
+            navbar.classList.remove('active');
+        }
+
         if(top >= offset && top < offset + height) {
             links.forEach(link => {
                 link.classList.remove('active');

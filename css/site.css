@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 :root {
     --clr-light: #eee;
     --clr-dark: #111;
     --clr-primary: #D6B97F;
     --clr-secondary: #7EA1D6;
-    --clr-brand: #432A19;
+    --clr-brand: #432a19;
     --clr-primary: #8A7243;
     --clr-secondary: #36578A;
     --clr-brand-transparent: rgba(44, 28, 16, 0.96);
+    --clr-link: #eee;
+    --clr-link-hover: #99701c;
 }
 
 * {
@@ -101,6 +104,12 @@ h6, .h6 {
 
 a { color: var(--text-light); }
 
+.title {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 ul { margin: 0 40px; }
 
 ul li { 
@@ -121,6 +130,7 @@ li:hover a,
     border-bottom: 1px solid var(--color-light-primary);
 }
 
+
 .navbar { 
   padding: 0 32px;
   z-index: 1003;
@@ -133,12 +143,25 @@ li:hover a,
   left: 0;
   right: 0;
   width: auto;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.7);
+  background-color: transparent;
 }
+
+.navbar.active {
+  height: 64px;
+  background-image: linear-gradient(to right, rgba(8, 8, 8, 0.9), rgba(22, 14, 8, 0.7)); 
+  backdrop-filter: blur(26px); 
+  border-bottom: 1 solid rgba(68, 44, 27, 0.9);
+  box-shadow: 2px 0 8px rgba(22, 14, 8, 0.9);
+}
+
+.navbar.active .navbar-brand img {
+  max-height: 60px;
+}
+
 
 .navlist,
 .navlist a {
-    color: var(--clr-light);
+    color: var(--clr-link);
     transition: all .55s ease;
 }
 
@@ -186,7 +209,9 @@ li:hover a,
     font-size: 2.2rem;
   }
 
-  .navbar-toggler:hover {
+  .navbar-toggler:hover,
+  .navbar-toggler:active
+   {
       background-color: rgba(63, 47, 47, 0.2);
       border: rgba(210, 210, 210, 0.8);
       box-shadow: 0px 3px 8px var(--clr-shadow);
@@ -198,24 +223,25 @@ li:hover a,
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(210, 210,  210, 0.98);
-    backdrop-filter: blur(16px);  
+    background-image: linear-gradient(to right, rgba(8, 8, 8, 0.9), rgba(22, 14, 8, 0.7)); 
+    backdrop-filter: blur(20px);  
     box-shadow: 0 2px 10px var(--clr-dark);
     width: 80dvw;
     height: 100dvh;
 }
 
-.navbar-collapse .btn-close {
+.navbar-collapse .btn-close
+ {
     display: none;
-}
+ }
 
     .navbar-collapse.collapse .btn-close {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        width: 42px;
-        height: 42px;
+        width: 32px;
+        height: 32px;
         border: none;
         background-color: darkred;
         color: var(--clr-light);
@@ -250,7 +276,7 @@ li:hover a,
         margin: 0;
         padding: 0 32px;
         align-items: center;
-        color: var(--clr-dark);
+        color: var(--clr-light);
     }
 
     .navbar-collapse.collapse .navlist ul li a:hover {
@@ -262,8 +288,9 @@ li:hover a,
     .navbar .nav-item .nav-link:hover,
     .navbar .nav-item .active
     {
-        color: var(--clr-brand);
-        border-bottom: 4px solid var(--clr-brand);
+      color: var(--clr-link-hover);
+      font-weight: 500;
+      border: none;
     }
 
 @media (max-width: 800px) {
@@ -309,12 +336,18 @@ li:hover a,
       
 }
 
+  .btn-voltar.inativo {
+    display: none;
+    visibility: hidden;
+  }
+
   .btn-voltar {
     background-color: var(--clr-light-second);
     width: 64px;
     height: 64px;
     position: fixed;
     display: flex;
+    visibility: visible;
     justify-content: center;
     align-items: center;
     bottom: 64px;
@@ -401,6 +434,13 @@ footer {
   position: relative;
 }
 
+.container-galeria{
+  position: relative;
+  margin: auto;
+  max-width: 1364px;
+  padding-top:  42px;
+}
+
 .container-relative {
   position: relative;
   padding-top: 128px;
@@ -427,13 +467,13 @@ footer {
 .galeria-item {
   background-color:rgb(30, 30, 30); 
   min-height: 200px; 
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 8px;
 }
+
 
 @media (max-width: 414px) {
     .container {
@@ -918,7 +958,7 @@ footer {
 
 .card-display {
   border-radius: 8px;
-  padding: 20px 32px;
+  padding: 20px 0;
 }
 
 .card {
@@ -2068,14 +2108,14 @@ footer {
 }
 
 .carousel-inner {
-    max-width: 80vw;
-    margin: auto;
+    max-width: 90dvw;
+    margin: 0;
     display: flex;
     align-items: center;
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
+.carousel-item {  
     min-width: 100%;
     padding: 0 64px;
 }
