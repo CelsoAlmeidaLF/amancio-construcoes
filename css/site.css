@@ -435,7 +435,6 @@ li:hover a,
 
 @media (max-width: 414px) { }
 
-
 header {
     top: 0;
     z-index: 1001;
@@ -1011,33 +1010,37 @@ footer {
 .card a { color: white; }
 .card ul li { list-style-type: none; }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    .card {
-        margin-top: 132px;
-    }
+  .card {
+      margin-top: 132px;
+  }
+
+  .card-display {
+    margin-bottom: 64px;
+  }
 }
 
-/* Medium devices (tablets, 768px and up) */
+@media (min-width: 317px) {
+
+}
+
+@media (min-width: 414px) {
+
+}
+
 @media (min-width: 768px) {
     .card {
         margin-top: 0px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
 }
 
 .row {
