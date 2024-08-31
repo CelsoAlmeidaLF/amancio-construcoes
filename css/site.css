@@ -372,14 +372,11 @@ li:hover a,
     transition: all .08s ease;
   }
 
-.nav-link {
-    transition: all .55s ease;
-}
+.nav-link { transition: all .55s ease; }
 
 .nav-link:hover {
     color: var(--clr-light);
     border-bottom: 2px solid var(--clr-light);
-
 }
 
 .brand-image {
@@ -418,6 +415,27 @@ li:hover a,
   line-height: 1.2;
 }
 
+@media (min-width: 317px) 
+{ 
+  .display-4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 414px) 
+{ 
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 414px) { }
+
+
 header {
     top: 0;
     z-index: 1001;
@@ -438,7 +456,7 @@ footer {
   position: relative;
   margin: auto;
   max-width: 1364px;
-  padding-top:  42px;
+  padding-top: 42px;
 }
 
 .container-relative {
@@ -460,7 +478,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 0;
+    padding: 42px 0;
     width: 100%;
 }
 
