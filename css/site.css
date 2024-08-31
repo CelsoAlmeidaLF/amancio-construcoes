@@ -454,7 +454,7 @@ footer {
 
 .container-relative {
   position: relative;
-  padding-top: 128px;
+  padding-top: calc(64px + 24px);
 }
 
 .container-fluid {
