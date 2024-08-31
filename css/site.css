@@ -336,16 +336,11 @@ li:hover a,
       
 }
 
-  .btn-voltar.inativo {
-    display: none;
-    visibility: hidden;
-  }
-
   .btn-voltar {
     background-color: var(--clr-light-second);
     width: 64px;
     height: 64px;
-    position: fixed;
+    position: absolute;
     display: flex;
     visibility: visible;
     justify-content: center;
@@ -454,7 +449,6 @@ footer {
 .container-galeria{
   position: relative;
   margin: auto;
-  max-width: 1364px;
   padding-top: 42px;
 }
 
@@ -2139,6 +2133,7 @@ footer {
 .carousel-item {  
     min-width: 100%;
     padding: 0 64px;
+
 }
 
 .carousel-control {
