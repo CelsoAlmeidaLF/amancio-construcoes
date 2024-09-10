@@ -11,7 +11,12 @@
 <body>
 
     <main class="container-fluid">
-
+        
+            <div id="slideshow" class="slideshow-container">
+                <span class="close" onclick="closeSlideshow()">×</span>
+                <img id="slideshow-img" src="" alt="Slideshow Image">
+            </div>
+ 
         <!-- #region HEADER -->
         <header class="container-fluid">
             <div class="navbar"> 
@@ -97,6 +102,7 @@
 
         <!-- #region GALERIA DE FOTOS -->
         <section id="fotos" class="bg-dark min-vh-100">
+
             <div class="container-relative bg-dark min-vh-100">
 
                 <h2 class="text-light title text-align-center">SERVIÇOS</h2>
@@ -107,90 +113,81 @@
                 
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (1).jpg" alt="">
+                                <img src="./img/galeria/img (1).jpg" onclick="openSlideshow('./img/galeria/img (1).jpg')" alt="">
                             </div>
                         </div>
                 
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (2).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (3).jpg" alt="">
-                
-                            </div>
-                        </div>
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (4).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                
-                    <div class="row pt-5" style="min-height: 200px;">
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (5).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (6).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (7).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (8).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                
-                    <div class="row pt-5" style="min-height: 200px;">
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (9).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (10).jpg" alt="">
-                
-                            </div>
-                        </div>
-                
-                        <div class="col-md-3 px-2">
-                            <div class="galeria-item">
-                                <img src="./img/galeria/img (13).jpg" alt="">
+                                <img src="./img/galeria/img (2).jpg" onclick="openSlideshow('./img/galeria/img (2).jpg')" alt="">
                             </div>
                         </div>
                         
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (14).jpg" alt="">
+                                <img src="./img/galeria/img (3).jpg" onclick="openSlideshow('./img/galeria/img (3).jpg')" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (4).jpg" onclick="openSlideshow('./img/galeria/img (4).jpg')" alt="">     
+                            </div>
+                        </div>
+                    </div>
                 
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (5).jpg" onclick="openSlideshow('./img/galeria/img (5).jpg')" alt="">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (6).jpg" onclick="openSlideshow('./img/galeria/img (6).jpg')" alt="">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (7).jpg" onclick="openSlideshow('./img/galeria/img (7).jpg')" alt="">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (8).jpg" onclick="openSlideshow('./img/galeria/img (8).jpg')" alt="">
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                    <div class="row pt-5" style="min-height: 200px;">
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (9).jpg" onclick="openSlideshow('./img/galeria/img (9).jpg')" alt="">
+                
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (10).jpg" onclick="openSlideshow('./img/galeria/img (10).jpg')" alt="">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (13).jpg" onclick="openSlideshow('./img/galeria/img (13).jpg')" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 px-2">
+                            <div class="galeria-item">
+                                <img src="./img/galeria/img (14).jpg" onclick="openSlideshow('./img/galeria/img (14).jpg')" alt="">
                             </div>      
                         </div>
                 
@@ -200,29 +197,26 @@
                 
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (15).jpg" alt="">
-                
+                                <img src="./img/galeria/img (15).jpg" onclick="openSlideshow('./img/galeria/img (15).jpg')" alt="">
                             </div>
                         </div>
                 
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (16).jpg" alt="">
-                
+                                <img src="./img/galeria/img (16).jpg" onclick="openSlideshow('./img/galeria/img (16).jpg')" alt="">   
                             </div>
                         </div>
                 
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (17).jpg" alt="">
+                                <img src="./img/galeria/img (17).jpg" onclick="openSlideshow('./img/galeria/img (17).jpg')" alt="">
                 
                             </div>
                         </div>
                         
                         <div class="col-md-3 px-2">
                             <div class="galeria-item">
-                                <img src="./img/galeria/img (1).jpg" alt="">
-                
+                                <img src="./img/galeria/img (1).jpg" onclick="openSlideshow('./img/galeria/img (1).jpg')" alt="">
                             </div>
                         </div>
                 

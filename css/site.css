@@ -59,7 +59,7 @@ p {
     margin-bottom: 1rem;
 }
 
-img {
+.galeria-item img {
     max-height: 200px;
     margin: 1px 0;
     object-fit: cover;
@@ -2162,4 +2162,36 @@ input {
   margin-bottom: 8px;
   border-radius: 4px;
   padding: 8px;
+}
+
+.slideshow-container {
+  z-index: 1100;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(30, 30, 30);
+  justify-content: center;
+  align-items: center;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slideshow-container img {
+  width: 90dvw;
+  height: 90dvh;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
